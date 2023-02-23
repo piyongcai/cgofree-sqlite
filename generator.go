@@ -5,6 +5,11 @@
 //go:build generator
 // +build generator
 
+//TODO 2023-02-23, netbsd/amd64 fails generating SQLite 3.41:
+//
+//	C front end 36/85: testdata/sqlite-src-3410000/ext/recover/sqlite3recover.c ... testdata/sqlite-src-3410000/ext/recover/sqlite3recover.c:2023:41: front-end: undefined: SQLITE_FCNTL_RESET_CACHE
+
+
 package main
 
 import (
